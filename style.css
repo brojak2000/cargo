@@ -1,35 +1,113 @@
-body {
-    font-family: Arial, sans-serif;
+/* General Styles */
+* {
     margin: 0;
     padding: 0;
-    background: white;
-    color: black;
-    text-align: center;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Inter', sans-serif;
+    background: #fdfdfd;
+    color: #111;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
-    background: black;
+    background: #111;
     color: white;
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 15px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 72px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -1px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+/* Grid Section */
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 10px;
-    padding: 20px;
+    padding: 50px 20px;
 }
 
-.project {
-    background: #ddd;
-    padding: 50px;
-    font-size: 20px;
+.item {
+    background: #111;
+    color: white;
+    padding: 80px;
+    font-size: 28px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+    transition: background 0.3s ease-in-out;
+}
+
+.item:hover {
+    background: #333;
+}
+
+.large {
+    grid-column: span 2;
+}
+
+/* Sections */
+section {
+    margin-top: 100px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background: #111;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Work Sans', sans-serif;
 }
